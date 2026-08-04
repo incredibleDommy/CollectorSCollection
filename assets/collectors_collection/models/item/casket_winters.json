@@ -1,0 +1,6 @@
+{
+  "parent": "collectors_collection:model/casket_of_ancient_winters",
+  "textures": {
+    "layer0": "collectors_collection:item/casket_texture"
+  }
+}

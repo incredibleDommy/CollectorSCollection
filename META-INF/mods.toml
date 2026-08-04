@@ -1,0 +1,21 @@
+modLoader="lowcodefml"
+showAsResourcePack = false
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="collectors_collection"
+version="1.0.0"
+logoFile = "logo.png"
+logoBlur = false
+displayName="Collector's Collection"
+description='''
+Adds a variety of unique relics and artifacts of various power!
+'''
+
+[[dependencies.collectors_collection]]
+modId = "palladium"
+mandatory = true
+versionRange = "[4.4.1,)"
+ordering = "NONE"
+side = "BOTH"

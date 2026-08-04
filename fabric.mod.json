@@ -1,0 +1,13 @@
+{
+    "schemaVersion": 1,
+    "authors": [
+        "Dave and also Bice"
+    ],
+    "environment": "*",
+    "id": "collectors_collection",
+    "version": "1.0.0",
+    "name": "Collector's Collection",
+    "description": "Adds a variety of unique relics and artifacts of various power!",
+    "icon": "logo.png",
+    "license": "All rights reserved"
+}

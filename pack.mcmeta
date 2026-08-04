@@ -1,0 +1,13 @@
+{
+    "pack": {
+        "id": "collectors_collection",
+        "pack_format": 15,
+        "description": "Adds a variety of unique relics and artifacts of various power!",
+        "version": "1.0.0"
+    },
+    "dependencies": {
+        "common": {},
+        "fabric": {},
+        "forge": {}
+    }
+}
