@@ -1,5 +1,8 @@
 {
     "pack.collectors_collection.name": "Collector's Collection",
     "item.collectors_collection.casket_winters": "Casket of Ancient Winters",
-    "item.collectors_collection.wabbajack": "Wabbajack"
+    "item.collectors_collection.wabbajack": "Wabbajack",
+    "item.collectors_collection.blood_of_ymir": "Blood of Ymir",
+    "item.collectors_collection.ultimate_nullifier": "Ultimate Nullifier",
+    "item.collectors_collection.shard_of_bifrost": "Shard of Bifrost"
 }
