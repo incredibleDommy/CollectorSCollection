@@ -16,9 +16,26 @@
             "gui_position": "null",
             "description": "null",
             "first_tick_commands": [
-                "spreadplayers ~ ~ 1 3000 false @s"
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0.5 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0.5 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force",
+                "spreadplayers ~ ~ 1 3000 false @s",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0.5 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0.5 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force"
+                
             ],
-            "last_tick_commands": [],
+            "last_tick_commands": [
+                
+            ],
             "commands": [],
             "conditions": {
                 "enabling": [
@@ -53,9 +70,23 @@
             "gui_position": "null",
             "description": "null",
             "first_tick_commands": [
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0.5 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0.5 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force",
                 "team add rtp_team",
-                "team join rtp_team @e[distance=..10]",
-                "spreadplayers ~ ~ 3 3000 true @e[distance=..10]"
+                "team join rtp_team @a[distance=..10]",
+                "spreadplayers ~ ~ 3 3000 true @a[distance=..10]",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0.5 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0.5 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force"
             ],
             "last_tick_commands": [
                 "team remove rtp_team",
