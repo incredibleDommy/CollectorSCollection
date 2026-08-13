@@ -1,0 +1,75 @@
+[
+    {
+        "type": "palladium:laser",
+        "body_part": "right_arm",
+        "segments": 5,
+        "frequency": 2,
+        "spread": 5,
+        "glow_color": "#FBFBF9",
+        "core_color": "#FEFFDF",
+        "rainbow": true,
+        "glow_opacity": 0.3,
+        "core_opacity": 1,
+        "bloom": 1,
+        "size": 4,
+        "normal_transparency": false,
+        "rotation": 4,
+        "rotation_speed": 2,
+        "visibility":{
+            "first_person": false,
+            "third_person": true
+        },
+        "offset": [
+            0,
+            -8,
+            0
+        ]
+    },
+    {
+        "type": "palladium:laser",
+        "body_part": "head",
+        "segments": 5,
+        "frequency": 2,
+        "spread": 5,
+        "glow_color": "#FFE100",
+        "core_color": "#FEFFDF",
+        "rainbow": true,
+        "glow_opacity": 0.3,
+        "core_opacity": 1,
+        "bloom": 1,
+        "size": 4,
+        "normal_transparency": false,
+        "rotation": 4,
+        "rotation_speed": 2,
+        "visibility":{
+            "first_person": true,
+            "third_person": false
+        },
+        "offset": [
+            -5,
+            -3,
+            0
+        ]
+    },
+        {
+            "type": "palladium:lightning",
+            "body_part": "right_arm",
+            "segments": 5,
+            "frequency": 2,
+            "spread": 5,
+            "glow_color": "#F0FF23",
+            "core_color": "#FFFFFF",
+            "rainbow": true,
+            "glow_opacity": 0.1,
+            "core_opacity": 1,
+            "bloom": 1,
+            "size": 1,
+            "normal_transparency": true,
+            "rotation": 0,
+            "rotation_speed": 10,
+            "visibility": {
+                "first_person": true,
+                "third_person": true
+            }
+        }
+]

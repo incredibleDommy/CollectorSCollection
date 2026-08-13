@@ -2,39 +2,39 @@
     "name": "Shard of Bifrost",
     "persistent_data": true,
     "background": "minecraft:textures/block/white_wool.png",
-    "icon": "minecraft:wither_skeleton_skull",
+    "icon": "collectors_collection:shard_of_bifrost",
     "gui_display_type": "tree",
     "abilities": {
         "rtp": {
             "type": "palladium:command",
             "icon": "minecraft:command_block",
-            "title": "null",
+            "title": "Unstable Teleport",
             "bar_color": "light_gray",
             "hidden": true,
-            "hidden_in_bar": true,
-            "list_index": -1,
+            "hidden_in_bar": false,
+            "list_index": 0,
             "gui_position": "null",
             "description": "null",
             "first_tick_commands": [
-                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0.5 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
                 "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
                 "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0 0.5 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force",
-                "spreadplayers ~ ~ 1 3000 false @s",
-                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0.5 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force",
+                "playsound minecraft:entity.enderman.teleport master @a[distance=..10] ~ ~ ~",
+                "execute as @s run rtp",
+                "execute at @p run particle minecraft:dust 1 0 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
                 "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
                 "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0 0.5 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force"
-                
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force"
             ],
             "last_tick_commands": [
-                
+                "clear @s collectors_collection:shard_of_bifrost 1"
             ],
             "commands": [],
             "conditions": {
@@ -62,34 +62,38 @@
         "rtp_group": {
             "type": "palladium:command",
             "icon": "minecraft:command_block",
-            "title": "Teleport Group",
+            "title": "Unstable Teleport Group",
             "bar_color": "light_gray",
-            "hidden": false,
+            "hidden": true,
             "hidden_in_bar": false,
-            "list_index": -1,
+            "list_index": 0,
             "gui_position": "null",
             "description": "null",
             "first_tick_commands": [
-                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0.5 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
                 "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
                 "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0 0.5 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force",
-                "team add rtp_team",
-                "team join rtp_team @a[distance=..10]",
-                "spreadplayers ~ ~ 3 3000 true @a[distance=..10]",
-                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0.5 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force",
+                "team add bifrost_travel",
+                "team join bifrost_travel @e[distance=..5]",
+                "effect give @e[team=bifrost_travel] minecraft:glowing 5 0 true",
+                "playsound minecraft:entity.enderman.teleport master @a[distance=..10] ~ ~ ~",
+                "execute as @s run rtp",
+                "playsound minecraft:entity.enderman.teleport master @a[distance=..10] ~ ~ ~",
+                "tp @e[team=bifrost_travel] @s",
+                "execute at @p run particle minecraft:dust 1 0 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
                 "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
                 "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0 0.5 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
-                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force"
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force"
             ],
             "last_tick_commands": [
-                "team remove rtp_team",
+                "team remove bifrost_travel",
                 "clear @s collectors_collection:shard_of_bifrost 1"
             ],
             "commands": [],
@@ -108,6 +112,209 @@
                         "type": "palladium:crouching"
                     }
                 ]
+            }
+        },
+        "spawn": {
+            "type": "palladium:command",
+            "icon": "minecraft:command_block",
+            "title": "Teleport to Midgard Spawn",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": false,
+            "list_index": 1,
+            "gui_position": "null",
+            "description": "null",
+            "first_tick_commands": [
+                "execute at @p run particle minecraft:dust 1 0 0 2 ~ ~1.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force",
+                "playsound minecraft:entity.enderman.teleport master @a[distance=..10] ~ ~ ~",
+                "execute as @s run spawn",
+                "playsound minecraft:entity.enderman.teleport master @a[distance=..10] ~ ~ ~",
+                "execute at @p run particle minecraft:dust 1 0 0 2 ~ ~1 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force"
+            ],
+            "last_tick_commands": [
+                "clear @s collectors_collection:shard_of_bifrost 1"
+            ],
+            "commands": [],
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:action",
+                        "cooldown": 0,
+                        "key_type": "left_click",
+                        "needs_empty_hand": false,
+                        "allow_scrolling_when_crouching": true
+                    }
+                ],
+                "unlocking": [
+                    {
+                        "type": "palladium:not",
+                        "conditions": [
+                            {
+                                "type": "palladium:crouching"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "spawn_group": {
+            "type": "palladium:command",
+            "icon": "minecraft:command_block",
+            "title": "Teleport Group to Spawn",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": false,
+            "list_index": 1,
+            "gui_position": "null",
+            "description": "null",
+            "first_tick_commands": [
+                "execute at @p run particle minecraft:dust 1 0 0 2 ~ ~1.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~1.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force",
+                "team add bifrost_travel",
+                "team join bifrost_travel @e[distance=..5]",
+                "effect give @e[team=bifrost_travel] minecraft:glowing 5 0 true",
+                "execute as @s run spawn",
+                "playsound minecraft:entity.enderman.teleport master @a[distance=..10] ~ ~ ~",
+                "tp @e[team=bifrost_travel] @s",
+                "playsound minecraft:entity.enderman.teleport master @a[distance=..10] ~ ~ ~",
+                "execute at @p run particle minecraft:dust 1 0 0 2 ~ ~1.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0.5 0 2 ~ ~0.8 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 1 0 2 ~ ~0.6 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 0 2 ~ ~0.4 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 1 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 0 0 1 2 ~ ~0.2 ~ 0.8 0.2 0.8 0 30 force",
+                "execute at @p run particle minecraft:dust 1 0 1 2 ~ ~0.3 ~ 0.8 0.2 0.8 0 30 force"
+            ],
+            "last_tick_commands": [
+                "team remove bifrost_travel",
+                "clear @s collectors_collection:shard_of_bifrost 1"
+            ],
+            "commands": [],
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:action",
+                        "cooldown": 10,
+                        "key_type": "left_click",
+                        "needs_empty_hand": false,
+                        "allow_scrolling_when_crouching": true
+                    }
+                ],
+                "unlocking": [
+                    {
+                        "type": "palladium:crouching"
+                    }
+                ]
+            }
+        },
+        "bifrost_beam": {
+            "type": "palladium:energy_beam",
+            "icon": "minecraft:blaze_rod",
+            "title": "Bifrost Beam",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": false,
+            "list_index": 2,
+            "gui_position": "null",
+            "description": "null",
+            "energy_beam": "collectors_collection:bifrost_beam",
+            "damage_type": "null",
+            "damage": 5,
+            "max_distance": 30,
+            "speed": 1.0,
+            "set_on_fire_seconds": 0,
+            "cause_fire": false,
+            "smelt_blocks": false,
+            "commands_on_block_hit": [],
+            "commands_on_entity_hit": [
+                "execute as @a[distance=..1] run rtp"
+            ],
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:held",
+                        "cooldown": 0,
+                        "key_type": "key_bind",
+                        "needs_empty_hand": false
+                    }
+                ],
+                "unlocking": []
+            }
+        },
+        "beam_consume_shard": {
+            "type": "palladium:command",
+            "icon": "minecraft:command_block",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": false,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "null",
+            "first_tick_commands": [],
+            "last_tick_commands": [],
+            "commands": [
+                "clear @s collectors_collection:shard_of_bifrost 1"
+            ],
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:and",
+                        "conditions": [
+                            {
+                                "type": "palladium:interval",
+                                "active_ticks": 0,
+                                "disabled_ticks": 2
+                            },
+                            {
+                                "type": "palladium:ability_enabled",
+                                "power": "null",
+                                "ability": "bifrost_beam"
+                            }
+                        ]
+                    }
+                ],
+                "unlocking": []
+            }
+        },
+        "beam_aim": {
+            "type": "palladium:aim",
+            "icon": "minecraft:blaze_rod",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": false,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "null",
+            "time": 3,
+            "arm": "main_arm",
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:ability_enabled",
+                        "power": "null",
+                        "ability": "bifrost_beam"
+                    }
+                ],
+                "unlocking": []
             }
         }
     }
