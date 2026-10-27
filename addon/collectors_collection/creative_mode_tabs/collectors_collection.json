@@ -1,0 +1,11 @@
+{
+    "icon": "collectors_collection:shard_of_bifrost",
+    "title": "Collectors Collection",
+    "items": [
+        "collectors_collection:blood_of_ymir",
+        "collectors_collection:casket_winters",
+        "collectors_collection:shard_of_bifrost",
+        "collectors_collection:ultimate_nullifier",
+        "collectors_collection:wabbajack"
+    ]
+}

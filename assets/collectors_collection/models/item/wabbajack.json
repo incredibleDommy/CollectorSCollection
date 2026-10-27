@@ -1,5 +1,5 @@
 {
-  "parent": "collectors_collection:model/wabbajack",
+  "parent": "collectors_collection:model/wabbajack", 
   "textures": {
     "layer0": "collectors_collection:item/wabbajack"
   }
