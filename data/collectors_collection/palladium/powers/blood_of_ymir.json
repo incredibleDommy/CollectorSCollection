@@ -1,0 +1,83 @@
+{
+    "name": "Jotunheim's Strength",
+    "persistent_data": true,
+    "background": "minecraft:textures/block/white_wool.png",
+    "icon": "minecraft:blue_ice",
+    "gui_display_type": "tree",
+    "abilities": {
+        "size_change": {
+            "type": "palladium:size",
+            "icon": "palladium:textures/icon/size.png",
+            "title": "Jotun's Stature",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": false,
+            "list_index": -1,
+            "gui_position": "null",
+            "gui_frame_type": "task",
+            "description": "null",
+            "scale": 20,
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:has_effect",
+                        "effect": "kubejs:jotuns_strength"
+                    }
+                ],
+                "unlocking": []
+            }
+        },
+        "absorption": {
+            "type": "palladium:command",
+            "icon": "minecraft:command_block",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": -1,
+            "gui_position": "null",
+            "gui_frame_type": "task",
+            "description": "null",
+            "first_tick_commands": [
+                "effect give @s minecraft:absorption 180 4 true"
+            ],
+            "last_tick_commands": [],
+            "commands": [],
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:has_effect",
+                        "effect": "kubejs:jotuns_strength"
+                    }
+                ],
+                "unlocking": []
+            }
+        },
+        "remove_power": {
+            "type": "palladium:command",
+            "icon": "minecraft:command_block",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": -1,
+            "gui_position": "null",
+            "gui_frame_type": "task",
+            "description": "null",
+            "first_tick_commands": [],
+            "last_tick_commands": [
+                "superpower remove collectors_collection:blood_of_ymir @s"
+            ],
+            "commands": [],
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:has_effect",
+                        "effect": "kubejs:jotuns_strength"
+                    }
+                ],
+                "unlocking": []
+            }
+        }
+    }
+}

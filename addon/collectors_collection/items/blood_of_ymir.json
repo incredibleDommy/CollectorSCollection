@@ -1,5 +1,5 @@
 {
-    "max_stack_size": 1,
+    "max_stack_size": 8,
     "rarity": "uncommon",
     "is_fire_resistant": true
 }

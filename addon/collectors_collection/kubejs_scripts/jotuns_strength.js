@@ -1,0 +1,35 @@
+StartupEvents.registry('mob_effect', event => {
+    event.create('jotuns_strength')
+    .color(0x7a2323)
+    .beneficial()
+    .modifyAttribute(
+        'minecraft:generic.attack_damage',
+        'b22b4fca-16ff-407a-8b89-44b10216c72f',
+        35,
+        'multiply_base'
+    )
+    .modifyAttribute(
+        'minecraft:generic.movement_speed',
+        '27a99648-597d-4ccf-bb05-a7f1747da2ce',
+        -0.75,
+        'multiply_base'
+    )
+    .modifyAttribute(
+        'minecraft:generic.knockback_resistance',
+        '298bc3db-d2d9-48e1-875a-09cde29072c3',
+        1,
+        'multiply_base'
+    )
+    .modifyAttribute(
+        'minecraft:generic.armor',
+        'f1e3c5a0-4b6d-4f8e-9c2b-1f3e5d6a7b8c',
+        10,
+        'multiply_base'
+    )
+    .modifyAttribute(
+        'forge:entity_reach',
+        '20f8d3b8-217f-4eaf-b65e-4c8fc9606769',
+        40,
+        'addition'
+    )
+})
